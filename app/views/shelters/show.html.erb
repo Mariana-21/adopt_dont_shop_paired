@@ -15,6 +15,18 @@
 <li>Zip Code: <%= @shelter.zip %></li>
 </ul>
 
+<article >
+  <h2>Reviews</h2>
+  <% @reviews.each do |review| %>
+    <h3> <%= review.title %> </h3>
+    <p>  "Rated" <%= review.rating %> "stars!" </p>
+    <p> <%= review.content %></p>
+    <% if review.picture != "No Image" %>
+      <img src=<%= "#{review.picture}" %> alt=<%= "#{review.picture}" %> height="100" width="100">
+    <% end %>
+  <% end %>
+</article>
+
 <%= button_to "Shelter Pets", "/shelters/#{@shelter.id}/pets", method: :get %>
 <%= button_to "Update Shelter", "/shelters/#{@shelter.id}/edit", method: :get %>
 <%= button_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
