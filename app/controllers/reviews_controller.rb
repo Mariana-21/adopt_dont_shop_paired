@@ -1,2 +1,8 @@
 class ReviewsController < ApplicationController
-end 
+
+  private
+
+  def review_params
+    params.permit(:title, :rating, :content, :picture)
+  end
+end
