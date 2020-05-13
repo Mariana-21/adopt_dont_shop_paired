@@ -24,6 +24,8 @@
     <% if review.picture != "No Image" %>
       <img src=<%= "#{review.picture}" %> alt=<%= "#{review.picture}" %> height="100" width="100">
     <% end %>
+    <%= button_to "Update Review", "/reviews/#{review.id}/edit", method: :get %><br/>
+    <%= button_to "Delete Review", "/reviews/#{review.id}", method: :delete %>
   <% end %>
 
   <%= link_to  "Write a Review", "/shelters/#{@shelter.id}/reviews/new" %>
