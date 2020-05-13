@@ -18,6 +18,7 @@ RSpec.describe "Update Review on Shelter show page", type: :feature do
 
     fill_in :title, with: "Such a Great Place!"
     fill_in :content,  with: "Had a Great tme and found a great pup"
+    fill_in :rating, with: "5"
     fill_in :picture,  with: "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg&auto=webp"
     click_on "Update Review"
 
