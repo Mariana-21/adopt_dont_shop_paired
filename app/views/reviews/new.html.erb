@@ -8,7 +8,7 @@
 <%= number_field_tag :rating, nil, in: 1..5 %><br />
 
 <%= label_tag :content %><br />
-<%= text_field_tag :content %><br />
+<%= text_area_tag 'content' %><br/>
 
 <%= label_tag :picture, "Picture URL (Optional)" %><br>
 <%= text_field_tag :picture, nil, placeholder: 'Optional'%><br>

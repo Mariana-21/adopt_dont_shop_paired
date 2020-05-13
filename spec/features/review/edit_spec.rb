@@ -20,7 +20,7 @@ RSpec.describe "Update Review on Shelter show page", type: :feature do
     fill_in :content,  with: "Had a Great tme and found a great pup"
     fill_in :rating, with: "5"
     fill_in :picture,  with: "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg&auto=webp"
-    click_on "Update Review"
+    click_on "Submit Review"
 
     expect(page).to have_content(review_1.title)
     expect(page).to have_content(review_1.rating)
@@ -28,20 +28,26 @@ RSpec.describe "Update Review on Shelter show page", type: :feature do
     expect(page).to have_css("img[src*='#{review_1.picture}']")
 
   end
-  it "Cannot create review without a title, rating, and/or content" do
-      shelter_2 = Shelter.create(name: "La Costa Animal Hospital", address: "7668 El Camino Real #101", city: "Carlsbad", state: "CA", zip: "92009")
-      review_1 = shelter_2.reviews.create(title: "Found my best friend!",
-                           rating: "5",
-                           content: "The staff was very friendly and allowe dme to take my time meeting with any dog I thought was a godo fit. They even allowed and encouraged me to bring my other dog to meet one of the pups I was interested in. This flexibility helped me make sure the dog I met with was a good fit. I've found my new best friend!",
-                           picture: "https://www.pedigreedatabase.com/uploads/Reliya/images/13592736_10208042346674904_51006761307976618_n-1.jpg",
-                           shelter_id: shelter_2.id)
-
-      visit "/shelters/#{shelter_2.id}"
+  it "Cannot update review without a title, rating, and/or content" do
+    shelter_1 = Shelter.create(name: "Pets Place",
+                         address: "341 Bonanza",
+                         city:  "Denver",
+                         state: "CO",
+                         zip: 80127)
+    review_1 = shelter_1.reviews.create(title: "Found my best friend!",
+                         rating: "5",
+                         content: "The staff was very friendly and allowe dme to take my time meeting with any dog I thought was a godo fit. They even allowed and encouraged me to bring my other dog to meet one of the pups I was interested in. This flexibility helped me make sure the dog I met with was a good fit. I've found my new best friend!",
+                         picture: "https://www.pedigreedatabase.com/uploads/Reliya/images/13592736_10208042346674904_51006761307976618_n-1.jpg",
+                         shelter_id: shelter_1.id)
+    visit "/shelters/#{shelter_1.id}"
 
       click_on("Update Review")
       expect(current_path).to eq("/reviews/#{review_1.id}/edit")
-
-      click_on("Update Review")
+      fill_in :title, with: ""
+      fill_in :content,  with: "Had a Great tme and found a great pup"
+      fill_in :rating, with: "5"
+      fill_in :picture,  with: "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg&auto=webp"
+      click_on("Submit Review")
 
       expect(page).to have_content("Review not submitted. Missing one or more of the following fields: Title, Rating or Additonal Information.")
       expect(page).to have_button("Submit Review")
