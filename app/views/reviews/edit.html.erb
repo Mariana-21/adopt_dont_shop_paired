@@ -2,8 +2,8 @@
 <%= label_tag "Title" %>
 <%= text_field_tag :title, @review.title %><br/>
 
-<%= label_tag "Rating" %>
-<%= text_field_tag :rating, @review.rating %><br/>
+<%= label_tag :rating %><br>
+<%= number_field_tag :rating, nil, in: 1..5 %><br />
 
 <%= label_tag "Content" %><br/>
 <%= text_area_tag 'content', @review.content =%><br/>
