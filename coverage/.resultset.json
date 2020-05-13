@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/environment.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/application.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/application.rb": [
         1,
         null,
         1,
@@ -41,12 +41,12 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/boot.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/environments/test.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/environments/test.rb": [
         1,
         null,
         null,
@@ -90,7 +90,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/application_controller_renderer.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -100,7 +100,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/assets.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -116,7 +116,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/backtrace_silencers.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -125,20 +125,20 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/cookies_serializer.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/cookies_serializer.rb": [
         null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/inflections.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -156,13 +156,13 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/mime_types.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/initializers/wrap_parameters.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -178,7 +178,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/config/routes.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/config/routes.rb": [
         1,
         null,
         null,
@@ -200,30 +200,33 @@
         1,
         1,
         1,
+        1,
+        1,
+        null,
         1,
         1,
         null,
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/helpers/application_helper.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/helpers/welcome_helper.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/controllers/welcome_controller.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/controllers/welcome_controller.rb": [
         1,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/controllers/application_controller.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/pets/delete_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/pets/delete_spec.rb": [
         1,
         null,
         1,
@@ -257,62 +260,6 @@
         1,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/pets/edit_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null,
@@ -326,36 +273,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/pets/index_spec.rb": [
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/pets/new_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/pets/edit_spec.rb": [
         1,
         null,
         1,
@@ -369,9 +287,14 @@
         null,
         null,
         1,
-        1,
-        1,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
         null,
         1,
         1,
@@ -387,10 +310,6 @@
         1,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null,
@@ -410,7 +329,91 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/pets/show_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/pets/index_spec.rb": [
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/pets/new_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/pets/show_spec.rb": [
         1,
         null,
         1,
@@ -449,30 +452,9 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/review/review_shelter_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/review/new_spec.rb": [
         1,
         null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -481,9 +463,21 @@
         null,
         1,
         null,
-        null
-      ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/shelters/delete_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         null,
         1,
@@ -492,23 +486,21 @@
         1,
         null,
         null,
-        null,
-        null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
         1,
         null,
         1,
         null,
         1,
         1,
+        null,
         1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -523,7 +515,79 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/shelters/edit_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/review/review_shelter_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/shelters/delete_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/shelters/edit_spec.rb": [
         1,
         null,
         1,
@@ -556,7 +620,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/shelters/index_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/shelters/index_spec.rb": [
         1,
         null,
         1,
@@ -581,7 +645,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/shelters/new_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/shelters/new_spec.rb": [
         1,
         null,
         1,
@@ -606,7 +670,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/shelters/shelter_pets_index_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/shelters/shelter_pets_index_spec.rb": [
         1,
         null,
         1,
@@ -659,7 +723,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/features/shelters/show_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/features/shelters/show_spec.rb": [
         1,
         null,
         1,
@@ -681,7 +745,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/models/pets_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/models/pets_spec.rb": [
         1,
         null,
         1,
@@ -696,18 +760,18 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/models/pet.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/models/pet.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/models/application_record.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/models/review_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/models/review_spec.rb": [
         1,
         null,
         1,
@@ -722,13 +786,13 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/models/review.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/models/review.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/spec/models/shelter_spec.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/spec/models/shelter_spec.rb": [
         1,
         null,
         1,
@@ -741,7 +805,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/models/shelter.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/models/shelter.rb": [
         1,
         1,
         1,
@@ -749,7 +813,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/controllers/pets_controller.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/controllers/pets_controller.rb": [
         1,
         null,
         1,
@@ -802,7 +866,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/controllers/shelter_pets_controller.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/controllers/shelter_pets_controller.rb": [
         1,
         null,
         1,
@@ -811,7 +875,7 @@
         null,
         null
       ],
-      "/Users/millmer/Documents/turing/mod_2/adopt_dont_shop_paired/app/controllers/shelters_controller.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/controllers/shelters_controller.rb": [
         1,
         null,
         1,
@@ -826,9 +890,9 @@
         null,
         null,
         1,
-        5,
+        8,
         null,
-        5,
+        8,
         null,
         null,
         1,
@@ -862,8 +926,35 @@
         null,
         null,
         null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_paired/app/controllers/reviews_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        2,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
       ]
     },
-    "timestamp": 1589314851
+    "timestamp": 1589409235
   }
 }
