@@ -26,6 +26,25 @@ RSpec.describe "Update Review on Shelter show page", type: :feature do
     expect(page).to have_content(review_1.rating)
     expect(page).to have_content(review_1.content)
     expect(page).to have_css("img[src*='#{review_1.picture}']")
+
+  end
+  it "Cannot create review without a title, rating, and/or content" do
+      shelter_2 = Shelter.create(name: "La Costa Animal Hospital", address: "7668 El Camino Real #101", city: "Carlsbad", state: "CA", zip: "92009")
+      review_1 = shelter_2.reviews.create(title: "Found my best friend!",
+                           rating: "5",
+                           content: "The staff was very friendly and allowe dme to take my time meeting with any dog I thought was a godo fit. They even allowed and encouraged me to bring my other dog to meet one of the pups I was interested in. This flexibility helped me make sure the dog I met with was a good fit. I've found my new best friend!",
+                           picture: "https://www.pedigreedatabase.com/uploads/Reliya/images/13592736_10208042346674904_51006761307976618_n-1.jpg",
+                           shelter_id: shelter_2.id)
+
+      visit "/shelters/#{shelter_2.id}"
+
+      click_on("Update Review")
+      expect(current_path).to eq("/reviews/#{review_1.id}/edit")
+
+      click_on("Update Review")
+
+      expect(page).to have_content("Review not submitted. Missing one or more of the following fields: Title, Rating or Additonal Information.")
+      expect(page).to have_button("Submit Review")
   end
 end
 
