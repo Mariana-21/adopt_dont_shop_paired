@@ -1,11 +1,15 @@
-class Favorite < ApplicationRecord 
-  attr_reader :contents
+class Favorite 
+  attr_reader :pets
 
-  def initialize(initial_contents)
-    @contents = initial_contents
+  def initialize(initial_pets)
+    @pets = initial_pets ||= Array.new
   end
-  
+
   def total_count
-    @contents.values.sum
+    @pets.length
+  end
+
+  def add_pet(id)
+    @pets << id.to_s
   end
 end
