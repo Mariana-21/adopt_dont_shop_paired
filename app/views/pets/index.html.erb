@@ -5,7 +5,7 @@
 </nav>
 
 <% @pets.each do |pet| %>
-  <section id="pet-<%= pet.id %>">
+  <section id="pet-<%=pet.id%>">
     <img src=<%= "#{pet.image}" %> alt=<%= "#{pet.image}" %> height="100" width="100">
     <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %> </h2>
     <ul>
@@ -16,6 +16,5 @@
     </ul>
     <%= button_to "Update Pet", "/pets/#{pet.id}/edit", method: :get %><br />
     <%= button_to "Delete Pet", "/pets/#{pet.id}", method: :delete %>
-    <%= button_to  "Add To Favorites", "/favorites/#{pet.id}", method: :patch %>
   </section>
 <% end %>
