@@ -46,16 +46,7 @@ RSpec.describe "As a visitor" do
       expect(page).to_not have_link(pet_1.name) 
       expect(page).to_not have_link(pet_2.name) 
       expect(page).to_not have_link(pet_3.name)
-
-      
       end
     end
   end
 end
-
-
-
-# When I click that link
-# I'm redirected back to the favorites page
-# I see the text saying that I have no favorited pets
-# And the favorites indicator returns to 0
