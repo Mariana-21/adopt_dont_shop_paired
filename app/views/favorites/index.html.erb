@@ -1,8 +1,9 @@
 <h1> Favorites </h1>
 
 <%@pets.each do |pet|%>
-  <section id="pet-<%=pet.id%>">
-    <%= link_to  "#{pet.name}", "/pets/#{pet.id}" %>
-    <img src=<%= "#{pet.image}" %> alt=<%= "#{pet.image}" %> height="100" width="100">
-  </section>
+<section id="pet-<%=pet.id%>">
+  <%= link_to  "#{pet.name}", "/pets/#{pet.id}" %>
+  <img src=<%= "#{pet.image}" %> alt=<%= "#{pet.image}" %> height="100" width="100">
+</section>
 <% end %>
+  <%= link_to  "Remove All Pets", "/favorites", method: :delete, data: {confirm: "Are you sure you want to remove all pets?"} %>
