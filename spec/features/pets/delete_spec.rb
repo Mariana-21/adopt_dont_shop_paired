@@ -26,10 +26,9 @@ RSpec.describe "Destroy an pet" do
 
       expect(page).to have_content(pet_1.name)
 
-      click_button "Delete Pet"
-
+      click_on("Delete Pet")
       expect(current_path).to eq("/pets")
-      expect(page).to_not have_content("Mansy")
+      expect(page).to_not have_content(pet_1.name)
       expect(page).to have_content(pet_2.name)
     end
   end
