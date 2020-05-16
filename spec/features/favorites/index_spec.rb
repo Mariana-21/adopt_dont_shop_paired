@@ -41,10 +41,17 @@ RSpec.describe "As a visitor" do
       expect(page).to have_link(pet_1.name)
       expect(page).to have_link(pet_2.name)
       expect(page).to have_link(pet_3.name)
-      expect(page).to have_css("img[src*='#{pet_1.image}']")
-      expect(page).to have_css("img[src*='#{pet_2.image}']")
-      expect(page).to have_css("img[src*='#{pet_3.image}']")
+      expect(page).to have_css("img[src*='#{pet_1.image}']")  
+      expect(page).to have_css("img[src*='#{pet_2.image}']")  
+      expect(page).to have_css("img[src*='#{pet_3.image}']")  
+    end   
+    
+    it "I see text saying that I have no favorited pets" do 
+      visit"/favorites"
+
+      expect(page).to have_content("You haven't favorited any pets. Go find a pet you love!") 
     end
+
     it "can also remove pets from pet show page" do
       shelter_1 = Shelter.create(name: "Pets Place", address: "341 Bonanza", city:  "Denver", state: "CO", zip: 80127)
       shelter_2 = Shelter.create(name: "San Diego Humane Society", address: "5500 Gaines St", city: "San Diego", state: "CA", zip: "92110")
@@ -73,6 +80,7 @@ RSpec.describe "As a visitor" do
       visit "/favorites"
       expect(page).to_not have_content(pet_1.name)
     end
+
     it "when i visit the favorite index page I can delete favorites" do
       shelter_1 = Shelter.create(name: "Pets Place", address: "341 Bonanza", city:  "Denver", state: "CO", zip: 80127)
       shelter_2 = Shelter.create(name: "San Diego Humane Society", address: "5500 Gaines St", city: "San Diego", state: "CA", zip: "92110")
