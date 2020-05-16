@@ -62,7 +62,7 @@ This project builds off of the solo project, Adopt Don't Shop. Between you and y
 ## User Stories
 
 ```
-[ ] done
+[X] done
 
 User Story 1, Deploy your application to Heroku
 
@@ -78,7 +78,7 @@ the application must be hosted on Heroku.
 Users will be able to share their experiences with a shelter through providing reviews. Users should be able to create a review with a title (Example: "Awesome place!"), a rating (out of 5), and content (Example: "Truly enjoyed our time working with this shelter. Staff was great, and we found our perfect pet!"). A user can also upload one picture (image url address) for their review as well, but this is optional.
 
 ```
-[ ] done
+[X] done
 
 User Story 2, Shelter Reviews
 
@@ -93,7 +93,7 @@ Each review will have:
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 3, Shelter Review Creation
 
@@ -111,7 +111,7 @@ and I can see my new review
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 4, Shelter Review Creation, cont.
 
@@ -122,7 +122,7 @@ And I'm returned to the new form to create a new review
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 5, Edit a Shelter Review
 
@@ -141,7 +141,7 @@ And I can see my updated review
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 6, Edit a Shelter Review, cont.
 
@@ -152,7 +152,7 @@ And I'm returned to the edit form to edit that review
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 7, Delete a Shelter Review
 
@@ -168,7 +168,7 @@ And I should no longer see that shelter review
 Users will be able to favorite a pet and keep track of pet's they're interested in
 
 ```
-[ ] done
+[X] done
 
 User Story 8, Favorite Indicator
 
@@ -179,7 +179,7 @@ I can see this favorite indicator from any page in the application
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 9, Favorite Creation
 
@@ -194,7 +194,7 @@ The favorite indicator in the nav bar has incremented by one
 
 
 ```
-[ ] done
+[X] done
 
 User Story 10, Favorite Index Page
 
@@ -208,7 +208,7 @@ Each pet in my favorites shows the following information:
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 11, Favorite Indicator links to Index Page
 
@@ -218,7 +218,7 @@ I am taken to the favorites index page
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 12, Can't Favorite a Pet More Than Once
 
@@ -235,7 +235,7 @@ And I also see that my favorites indicator has decremented by 1
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 13, Remove a Favorite from Favorites Page
 
@@ -250,7 +250,7 @@ And I also see that the favorites indicator has decremented by 1
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 14, No Favorites Page
 
@@ -261,7 +261,7 @@ I see text saying that I have no favorited pets
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 15, Remove all Favorite from Favorites Page
 
