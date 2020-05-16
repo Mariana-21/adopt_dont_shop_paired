@@ -22,5 +22,10 @@
   </ul>
   <%= button_to "Update Pet", "/pets/#{@pet.id}/edit", method: :get %><br />
   <%= button_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>
-  <%= button_to  "Add to Favorites", "/favorites/#{@pet.id}", method: :patch %>
+  <% if favorite.pets.include?(@pet.id.to_s) %>
+    <%= button_to  "Remove from Favorites", "/favorites/#{@pet.id}", method: :delete %>
+  <% else %>
+    <%= button_to  "Add to Favorites", "/favorites/#{@pet.id}", method: :patch %>
+  <% end %>
+
 </section>
