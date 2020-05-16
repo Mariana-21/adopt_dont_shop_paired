@@ -44,6 +44,13 @@ RSpec.describe "As a visitor" do
       expect(page).to have_css("img[src*='#{pet_1.image}']")  
       expect(page).to have_css("img[src*='#{pet_2.image}']")  
       expect(page).to have_css("img[src*='#{pet_3.image}']")  
-    end                      
+    end   
+    
+    it "I see text saying that I have no favorited pets" do 
+      visit"/favorites"
+
+      expect(page).to have_content("You haven't favorited any pets. Go find a pet you love!") 
+      save_and_open_page
+    end
   end
 end
