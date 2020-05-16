@@ -14,4 +14,10 @@ class FavoritesController < ApplicationController
     flash[:notice] = "You now have added #{pet.name} to your favorites!"
     redirect_to "/pets/#{pet.id}"
   end
+
+  def destroy 
+    favorite.remove_all
+
+    redirect_to "/favorites"
+  end
 end 
