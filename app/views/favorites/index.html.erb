@@ -4,6 +4,7 @@
 <section id="pet-<%=pet.id%>">
   <%= link_to  "#{pet.name}", "/pets/#{pet.id}" %>
   <img src=<%= "#{pet.image}" %> alt=<%= "#{pet.image}" %> height="100" width="100">
+  <%= button_to  "Remove from Favorites", "/favorites/#{pet.id}", method: :delete %>
 </section>
 <% end %>
   <%= link_to  "Remove All Pets", "/favorites", method: :delete, data: {confirm: "Are you sure you want to remove all pets?"} %>

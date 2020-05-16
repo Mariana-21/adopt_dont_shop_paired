@@ -21,17 +21,5 @@ RSpec.describe "pets show page", type: :feature do
     expect(page).to have_content(pet_1.approximate_age)
     expect(page).to have_content(pet_1.sex)
     expect(page).to have_content(pet_1.description)
-
   end
 end
-
-#
-# As a visitor
-# When I visit '/pets/:id'
-# Then I see the pet with that id including the pet's:
-# - image
-# - name
-# - description
-# - approximate age
-# - sex
-# - adoptable/pending adoption status

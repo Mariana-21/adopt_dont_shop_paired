@@ -1,4 +1,4 @@
-class Favorite 
+class Favorite
   attr_reader :pets
 
   def initialize(initial_pets)
@@ -15,5 +15,9 @@ class Favorite
 
   def remove_all
     @pets.clear
+  end
+
+  def delete_pet(pet_id)
+    @pets.delete(pet_id.to_s)
   end
 end
