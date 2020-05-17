@@ -1,5 +1,5 @@
 <h1> Favorites </h1>
-
+<%= link_to  "Adopt a Pet", "/applications/new" %>
 <%@pets.each do |pet|%>
 <section id="pet-<%=pet.id%>">
   <%= link_to  "#{pet.name}", "/pets/#{pet.id}" %>
