@@ -1,0 +1,34 @@
+<section>
+<%= form_tag("/applications", method: :post) do %>
+
+  <% @favorites.each do |pet| %>
+  <section id="pet-<%=pet.id%>">
+      <%= label_tag :"#{pet.name}"%><br>
+      <%= check_box_tag "adoptable_pet[]", pet.id %><br>
+  </section>
+  <%end%>
+
+  <%= label_tag "Name" %>
+  <%= text_field_tag :name %><br/>
+
+  <%= label_tag "Address" %>
+  <%= text_field_tag :address %><br/>
+
+  <%= label_tag "City" %>
+  <%= text_field_tag :city %><br/>
+
+  <%= label_tag "State" %>
+  <%= text_field_tag :state %><br/>
+
+  <%= label_tag "Zip" %>
+  <%= text_field_tag :zip %><br/>
+
+  <%= label_tag "Phone Number" %>
+  <%= text_field_tag :phone %><br/>
+
+  <%= label_tag "Description" %><br/>
+  <%= text_area_tag 'description' =%><br/>
+
+  <%= submit_tag "Submit" %>
+<% end %>
+</section>

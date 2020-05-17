@@ -5,6 +5,7 @@ class FavoritesController < ApplicationController
     if favorite.pets.length == 0
       flash[:notice] = "You haven't favorited any pets. Go find a pet you love!"
     end
+    @applications = Application.all
   end
 
   def update
@@ -14,7 +15,7 @@ class FavoritesController < ApplicationController
     flash[:notice] = "You now have added this pet to your favorites!"
     redirect_to "/pets/#{pet.id}"
   end
-  
+
   def destroy
     if request.env['PATH_INFO'] == '/favorites'
       favorite.remove_all
