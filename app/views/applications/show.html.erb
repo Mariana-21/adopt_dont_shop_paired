@@ -1,0 +1,22 @@
+<h1><%= Application %> </h1>
+
+<nav>
+  <%= link_to "Shelters", "/shelters" %>
+  <%= link_to "Pets", "/pets" %>
+</nav>
+<section>
+  <ul>
+    <li><%= "Name: #{@application.name}" %></li>
+    <li><%= "Address: #{@application.address}" %></li>
+    <li><%= "City: #{@application.city}" %> </li>
+    <li><%= "State: #{@application.state}" %></li>
+    <li><%= "Zip: #{@application.zip}" %></li>
+    <li><%= "Phone: #{@application.phone}" %></li>
+    <li><%= "Description: #{@application.description}" %></li>
+  </ul>
+  <ul> Adoption Pending Approval
+  <% @application.pets.each do |pet| %>
+    <li><%= link_to  "#{pet.name}", "/pets/#{pet.id}" %></li>
+  <% end %>
+  </ul>
+  </section>
