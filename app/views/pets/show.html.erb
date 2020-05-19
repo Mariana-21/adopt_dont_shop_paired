@@ -22,6 +22,7 @@
   </ul>
   <%= button_to "Update Pet", "/pets/#{@pet.id}/edit", method: :get %><br />
   <%= button_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>
+  <%= link_to  "View Applications", "/pets/#{@pet.id}/applications" %>
   <% if favorite.pets.include?(@pet.id.to_s) %>
     <%= button_to  "Remove from Favorites", "/favorites/#{@pet.id}", method: :delete %>
   <% else %>
