@@ -26,6 +26,11 @@ class PetsController < ApplicationController
 
   def update
     pet = Pet.find(params[:id])
+    if request.env['QUERY_STRING'] == "application_id=#{params[:application_id]}"
+      pet.update_attribute(:adoptable, false)
+      pet.save
+      redirect_to "/pets/#{pet.id}"
+    else
     pet.update({
       image: params[:image],
       name: params[:name],
@@ -35,6 +40,7 @@ class PetsController < ApplicationController
       })
     pet.save
     redirect_to "/pets/#{pet.id}"
+    end
   end
 
   def destroy
