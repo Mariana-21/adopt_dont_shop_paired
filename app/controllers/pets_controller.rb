@@ -25,13 +25,12 @@ class PetsController < ApplicationController
   end
 
   def update
-    app = ApplicationPet.all
-
-    binding.pry
-    if request.env['PATH_INFO'] == "/applications/#{app.id}"
-      pet.adoptable = false
-    else
     pet = Pet.find(params[:id])
+    if request.env['QUERY_STRING'] == "application_id=#{params[:application_id]}"
+      pet.update_attribute(:adoptable, false)
+      pet.save
+      redirect_to "/pets/#{pet.id}"
+    else
     pet.update({
       image: params[:image],
       name: params[:name],

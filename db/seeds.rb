@@ -6,7 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Pet.destroy_all
+Review.destroy_all
 Shelter.destroy_all
+
 
 shelter_1 = Shelter.create(name: "Pets Place",
   address: "341 Bonanza",
@@ -34,7 +36,7 @@ pet_3 = Pet.create(image: "https://dogzone-tcwebsites.netdna-ssl.com/wp-content/
                   name: "Skip", description: "I am very energetic, I love to be around people!", approximate_age: "2", sex: "Male", shelter_id: shelter_1.id)
 pet_4 = Pet.create(image: "https://www.thepaws.net/wp-content/uploads/2018/09/beagle-bloodhound-dog-mix-2.jpg",
                   name: "Yayla", description: "I am the calmest dog you will ever meet, I love belly rubs and lots of treats", approximate_age: "4", sex: "Female", shelter_id: shelter_3.id)
-pet_5 = Pet.create(image: "https://www.dogster.com/wp-content/uploads/2018/12/german-shepard-dog-face.jpg", 
+pet_5 = Pet.create(image: "https://www.dogster.com/wp-content/uploads/2018/12/german-shepard-dog-face.jpg",
                   name: "Shadow", description: "I'm a German Sheperd and I love to play and go on walks!", approximate_age: "3", sex: "Male", shelter_id: shelter_3.id)
 pet_6 = Pet.create(image: "https://i.pinimg.com/originals/16/f3/9e/16f39e58bede777ff5ad25e57521efb4.jpg",
                   name: "Max", description: "I am a 3 year old Rottweiler, super friendly and love to play!", approximate_age: "3", sex: "Male", shelter_id: shelter_2.id)
