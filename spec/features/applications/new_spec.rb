@@ -48,11 +48,11 @@ RSpec.describe "As a visitor", type: :feature do
 
       expect(current_path).to eq("/favorites")
       # expect(page).to have_content("Your Application has been submitted for these pets!")
-      # within("adoptable") do
-      # expect(page).to_not have_content(pet_1.name)
-      # expect(page).to_not have_content(pet_2.name)
-      # expect(page).to_not have_content(pet_3.name)
-      # end
+      within("#adoptable") do
+      expect(page).to_not have_content(pet_1.name)
+      expect(page).to_not have_content(pet_2.name)
+      expect(page).to_not have_content(pet_3.name)
+      end
     end
     it "it will fail to complete form with out proper information" do
       shelter_1 = Shelter.create(name: "Pets Place", address: "341 Bonanza", city:  "Denver", state: "CO", zip: 80127)

@@ -14,9 +14,14 @@
     <li><%= "Phone: #{@application.phone}" %></li>
     <li><%= "Description: #{@application.description}" %></li>
   </ul>
-  <ul> Adoption Pending Approval
+  </section>
+
+  <h2> Adoptions Pending Approval </h2>
+  <ul>
   <% @application.pets.each do |pet| %>
+  <section id="pet-<%=pet.id%>">
     <li><%= link_to  "#{pet.name}", "/pets/#{pet.id}" %></li>
+    <%= button_to "Approve", "/pets/#{pet.id}", method: :patch %><br />
+  </section>
   <% end %>
   </ul>
-  </section>
