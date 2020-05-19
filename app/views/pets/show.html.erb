@@ -17,7 +17,7 @@
     <% if @pet.adoptable %>
     <li><%= "Status: Adoptable" %></li>
     <% else %>
-    <li><%= "Status: Pending Adoption" %></li>
+    <li><%= "Status: Pending" %></li>
     <% end %>
   </ul>
   <%= button_to "Update Pet", "/pets/#{@pet.id}/edit", method: :get %><br />

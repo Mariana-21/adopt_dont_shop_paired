@@ -1,0 +1,27 @@
+<h1><%= Application %> </h1>
+
+<nav>
+  <%= link_to "Shelters", "/shelters" %>
+  <%= link_to "Pets", "/pets" %>
+</nav>
+<section>
+  <ul>
+    <li><%= "Name: #{@application.name}" %></li>
+    <li><%= "Address: #{@application.address}" %></li>
+    <li><%= "City: #{@application.city}" %> </li>
+    <li><%= "State: #{@application.state}" %></li>
+    <li><%= "Zip: #{@application.zip}" %></li>
+    <li><%= "Phone: #{@application.phone}" %></li>
+    <li><%= "Description: #{@application.description}" %></li>
+  </ul>
+  </section>
+
+  <h2> Adoptions Pending Approval </h2>
+  <ul>
+  <% @application.pets.each do |pet| %>
+  <section id="pet-<%=pet.id%>">
+    <li><%= link_to  "#{pet.name}", "/pets/#{pet.id}" %></li>
+    <%= button_to "Approve", "/pets/#{pet.id}?application_id=#{@application.id}", method: :patch %><br />
+  </section>
+  <% end %>
+  </ul>

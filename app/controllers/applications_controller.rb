@@ -1,7 +1,11 @@
 class ApplicationsController < ApplicationController
 
+  def show
+    @application = Application.find(params[:id])
+  end
+
   def new
-   @favorites = favorite.pets.map {|pet_id| Pet.find(pet_id)}
+    @favorites = favorite.pets.map {|pet_id| Pet.find(pet_id)}
   end
 
   def create
