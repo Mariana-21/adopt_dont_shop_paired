@@ -1,11 +1,6 @@
-<body>
 
 <h1><%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %></h1>
 
-<nav>
-  <%= link_to "Shelters", "/shelters" %>
-  <%= link_to "Pets", "/pets" %>
-</nav>
 
 <section>
 <% @shelter.pets.each do |pet| %>
@@ -25,4 +20,3 @@
 
 <%= button_to "Create Pet", "/shelters/#{@shelter.id}/pets/new", method: :get%>
 </section>
-</body>

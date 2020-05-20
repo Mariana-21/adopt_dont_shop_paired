@@ -1,11 +1,6 @@
-<body>
 
 <h1>Edit Shelter</h1>
 
-<nav>
-  <%= link_to "Shelters", "/shelters" %>
-  <%= link_to "Pets", "/pets" %>
-</nav>
 
 <section>
 <form action="/shelters/<%= @shelter.id %>" method="post">
@@ -20,5 +15,3 @@
   <input type='submit' value='Update Shelter'/>
 </form>
 </section>
-
-</body>

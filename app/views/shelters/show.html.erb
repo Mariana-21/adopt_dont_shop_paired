@@ -1,11 +1,5 @@
-<body>
 
 <h1><%= @shelter.name %></h1>
-
-<nav>
-  <%= link_to "Shelters", "/shelters" %>
-  <%= link_to "Pets", "/pets" %>
-</nav>
 
 <section id="shelter">
 <ul>
@@ -42,5 +36,3 @@
 <%= button_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
 <% end %>
 </section>
-
-</body>
