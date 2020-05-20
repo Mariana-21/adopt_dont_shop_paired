@@ -10,7 +10,11 @@
 <a href="/shelters/new">New Shelter</a>
 <% @shelters.each do |shelter| %>
   <h2><%= link_to "#{shelter.name}", "/shelters/#{shelter.id}" %> </h2>
+  <% if shelter.adopted_pet?(shelter) %>
+  <p> Currently a pet is being adopted from this Shelter!
+  <% else %>
   <%= button_to "Delete Shelter", "/shelters/#{shelter.id}", method: :delete %>
+  <% end %>
 
 <% end %>
 </section>
