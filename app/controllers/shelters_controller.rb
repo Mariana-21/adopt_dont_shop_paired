@@ -25,7 +25,18 @@ class SheltersController < ApplicationController
       zip: params[:shelter][:zip]
       })
     shelter.save
-    redirect_to '/shelters'
+    if shelter.save
+      redirect_to "/shelters"
+    elsif !shelter.save
+      missing_params = []
+      params[:shelter].each do |key, value|
+        if value == ""
+          missing_params << "#{key}"
+        end
+      end
+      flash[:notice] = "Shelter not submitted. Missing one or more of the following fields: #{missing_params.join}."
+      redirect_to "/shelters/#{shelter.id}"
+    end
   end
 
   def update
