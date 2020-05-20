@@ -24,7 +24,6 @@ class SheltersController < ApplicationController
       state: params[:shelter][:state],
       zip: params[:shelter][:zip]
       })
-    shelter.save
     if shelter.save
       redirect_to "/shelters"
     elsif !shelter.save
@@ -34,8 +33,8 @@ class SheltersController < ApplicationController
           missing_params << "#{key}"
         end
       end
-      flash[:notice] = "Shelter not submitted. Missing one or more of the following fields: #{missing_params.join}."
-      redirect_to "/shelters/#{shelter.id}"
+      flash[:notice] = "Shelter not submitted. Missing one or more of the following fields: #{missing_params.join(", ")}."
+      render :new
     end
   end
 
