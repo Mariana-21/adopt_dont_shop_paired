@@ -12,4 +12,10 @@ class Shelter < ApplicationRecord
     pets_pending.include?(false)
   end
 
+  def delete_pets
+    pets.each do |pet|
+      pet.destroy
+    end
+  end
+
 end

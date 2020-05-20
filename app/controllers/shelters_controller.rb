@@ -42,6 +42,8 @@ class SheltersController < ApplicationController
   end
 
   def destroy
+    shelter = Shelter.find(params[:id])
+    shelter.delete_pets
     Shelter.destroy(params[:id])
     redirect_to "/shelters"
   end
