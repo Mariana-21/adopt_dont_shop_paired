@@ -18,10 +18,20 @@ class PetsController < ApplicationController
 
   def create
     shelter = Shelter.find(params[:shelter_id])
-    pet = shelter.pets.create!(pet_params)
-    pet.save
+    pet = shelter.pets.create(pet_params)
 
+    if pet.save
       redirect_to "/shelters/#{shelter.id}/pets"
+    elsif !pet.save
+      missing_params = []
+      pet_params.each do |key, value|
+        if value == ""
+          missing_params << "#{key}"
+        end
+      end
+      flash[:notice] = "Pet not created. Missing one or more of the following fields: #{missing_params.join(", ")}."
+      render :new
+    end
   end
 
   def update
@@ -30,7 +40,7 @@ class PetsController < ApplicationController
       pet.update_attribute(:adoptable, false)
       pet.save
       redirect_to "/pets/#{pet.id}"
-    else
+    else 
     pet.update({
       image: params[:image],
       name: params[:name],
@@ -43,8 +53,18 @@ class PetsController < ApplicationController
     end
   end
 
+  def revoke
+    pet = Pet.find(params[:id])
+    pet.update_attribute(:adoptable, true)
+    pet.save
+    redirect_to "/applications/#{params[:application_id].to_i}"
+  end
+
   def destroy
-    Pet.destroy(params[:id])
+    pet = Pet.find(params[:id])
+    favorite.delete_pet(pet.id.to_s)
+    session[:favorite] = favorite.pets
+    pet.destroy
     redirect_to "/pets"
   end
 
