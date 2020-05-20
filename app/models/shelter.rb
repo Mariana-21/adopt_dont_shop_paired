@@ -25,8 +25,19 @@ class Shelter < ApplicationRecord
   end
 
   def total_pets
-    pets.total_count
+    pets.length
   end
+
+  def average_reviews
+    all_ratings = reviews.map do |review|
+      review.rating.to_f
+    end
+    all_ratings.sum / all_ratings.length
+  end
+  #
+  # def total_apps
+  #   applications = Application.all
+  # end
 
 
 #   I see statistics for that shelter, including:
