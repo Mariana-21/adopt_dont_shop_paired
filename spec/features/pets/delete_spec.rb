@@ -28,6 +28,7 @@ RSpec.describe "Destroy an pet" do
 
       click_on("Delete Pet")
       expect(current_path).to eq("/pets")
+      save_and_open_page
       expect(page).to_not have_content(pet_1.name)
       expect(page).to have_content(pet_2.name)
     end
