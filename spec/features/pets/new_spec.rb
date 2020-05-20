@@ -53,13 +53,6 @@ describe "user creates a new pet" do
 
 
         expect(page).to have_content("Pet not created.")
-      #  expect(current_path).to eq("/shelters/#{shelter_1.id}/pets")
-      #  expect(page).to have_content("Max")
-      #  # expect(page).to have_content("tory.jpg")
-      #  expect(page).to have_content(4)
-      #  expect(page).to have_content("Male")
-      # #  expect(page).to have_content("Very Cute Cat!")
-      #  expect(page).to have_content("Status: Adoptable")
       end
     end
   end
