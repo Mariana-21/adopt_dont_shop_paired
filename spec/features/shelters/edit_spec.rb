@@ -26,6 +26,25 @@ describe "user creates a new shelter" do
         expect(page).to have_content(80122)
 
       end
+      it "update  a current shelter" do
+        shelter_1 = Shelter.create(name: "Pets Place",
+                             address: "341 Bonanza",
+                             city:  "Denver",
+                             state: "CO",
+                             zip: 80127)
+        visit "/shelters/#{shelter_1.id}"
+        click_on "Update Shelter"
+
+        fill_in "shelter[name]", with: ""
+        fill_in "shelter[address]",  with: "Willowleaf"
+        fill_in "shelter[city]",  with: "Littleton"
+        fill_in "shelter[state]",  with: "CO"
+        fill_in "shelter[zip]",  with: 80122
+        click_on "Update Shelter"
+
+        expect(page).to have_content("Shelter not submitted. Missing one or more of the following fields: name.")
+
+      end
     end
   end
 end
