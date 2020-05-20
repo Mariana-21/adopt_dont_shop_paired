@@ -24,4 +24,14 @@ class Shelter < ApplicationRecord
     end
   end
 
+  def total_pets
+    pets.total_count
+  end
+
+
+#   I see statistics for that shelter, including:
+# - count of pets that are at that shelter
+# - average shelter review rating
+# - number of applications on file for that shelter
+
 end
