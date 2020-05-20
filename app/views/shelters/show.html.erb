@@ -33,7 +33,11 @@
 
 <%= button_to "Shelter Pets", "/shelters/#{@shelter.id}/pets", method: :get %>
 <%= button_to "Update Shelter", "/shelters/#{@shelter.id}/edit", method: :get %>
+<% if @shelter.adopted_pet?(@shelter) %>
+<p> Currently a pet is being adopted from this Shelter!
+<% else %>
 <%= button_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
+<% end %>
 </section>
 
 </body>
