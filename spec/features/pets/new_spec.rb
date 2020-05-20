@@ -52,7 +52,7 @@ describe "user creates a new pet" do
         click_on "Create Pet"
 
 
-        expect(page).to have_content("Pet not created.") 
+        expect(page).to have_content("Pet not created.")
       #  expect(current_path).to eq("/shelters/#{shelter_1.id}/pets")
       #  expect(page).to have_content("Max")
       #  # expect(page).to have_content("tory.jpg")
@@ -64,25 +64,3 @@ describe "user creates a new pet" do
     end
   end
 end
-
-
-# As a visitor
-# When I am updating or creating a pet
-# If I try to submit the form with incomplete information
-# I see a flash message indicating which field(s) I am missing
-# As a visitor
-# When I visit a Shelter Pets Index page
-# Then I see a link to add a new adoptable pet for that shelter "Create Pet"
-# When I click the link
-# I am taken to '/shelters/:shelter_id/pets/new' where I see a form to add a new adoptable pet
-# When I fill in the form with the pet's:
-# - image
-# - name
-# - description
-# - approximate age
-# - sex ('female' or 'male')
-# And I click the button "Create Pet"
-# Then a `POST` request is sent to '/shelters/:shelter_id/pets',
-# a new pet is created for that shelter,
-# that pet has a status of 'adoptable',
-# and I am redirected to the Shelter Pets Index page where I can see the new pet listed
