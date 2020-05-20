@@ -4,8 +4,9 @@
   <% application.pets.each do |pet| %>
     <% if pet.id == @pet.id %>
       <%= link_to  "#{application.name}", "/applications/#{application.id}" %>
-    <%elsif pet.id != @pet.id || application.pets.length == 0%>
-      <h3> No applications have been submitted for this pet. Submit one now! </h3>
     <%end%>
   <%end%>
+<%end%>
+<% if @applications.length == 0 %>
+<h3> No applications have been submitted for this pet. Submit one now! </h3>
 <%end%>
