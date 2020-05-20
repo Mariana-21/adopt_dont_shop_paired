@@ -30,7 +30,7 @@ class PetsController < ApplicationController
         end
       end
       flash[:notice] = "Pet not created. Missing one or more of the following fields: #{missing_params.join(", ")}."
-      render :new
+      redirect_to "/shelters/#{shelter.id}/pets/new"
     end
   end
 
@@ -40,7 +40,7 @@ class PetsController < ApplicationController
       pet.update_attribute(:adoptable, false)
       pet.save
       redirect_to "/pets/#{pet.id}"
-    else 
+    else
     pet.update({
       image: params[:image],
       name: params[:name],
@@ -48,8 +48,18 @@ class PetsController < ApplicationController
       sex: params[:sex],
       description: params[:description]
       })
-    pet.save
-    redirect_to "/pets/#{pet.id}"
+    if pet.save
+      redirect_to "/pets/#{pet.id}"
+    elsif !pet.save
+      missing_params = []
+      pet_params.each do |key, value|
+        if value == ""
+          missing_params << "#{key}"
+        end
+      end
+      flash[:notice] = "Pet not created. Missing one or more of the following fields: #{missing_params.join(", ")}."
+      redirect_to "/pets/#{pet.id}/edit"
+    end
     end
   end
 

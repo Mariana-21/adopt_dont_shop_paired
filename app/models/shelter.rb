@@ -25,13 +25,30 @@ class Shelter < ApplicationRecord
   end
 
   def total_pets
-    pets.total_count
+    pets.length
   end
 
+  def average_reviews
+    all_ratings = reviews.map do |review|
+      review.rating.to_f
+    end
+    if all_ratings.sum > 0
+      all_ratings.sum / all_ratings.length
+    else
+      0
+    end
+  end
 
-#   I see statistics for that shelter, including:
-# - count of pets that are at that shelter
-# - average shelter review rating
-# - number of applications on file for that shelter
-
+  def total_apps
+    total = 0
+    applications = Application.all
+    applications.each do |application|
+      application.pets.each do|pet|
+        if pets.include?(pet)
+        total += 1
+        end
+      end
+    end
+    total
+  end
 end
