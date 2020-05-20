@@ -30,7 +30,7 @@ class PetsController < ApplicationController
       pet.update_attribute(:adoptable, false)
       pet.save
       redirect_to "/pets/#{pet.id}"
-    else
+    else 
     pet.update({
       image: params[:image],
       name: params[:name],
@@ -41,6 +41,13 @@ class PetsController < ApplicationController
     pet.save
     redirect_to "/pets/#{pet.id}"
     end
+  end
+
+  def revoke
+    pet = Pet.find(params[:id])
+    pet.update_attribute(:adoptable, true)
+    pet.save
+    redirect_to "/applications/#{params[:application_id].to_i}"
   end
 
   def destroy
