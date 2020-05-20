@@ -18,4 +18,10 @@ class Shelter < ApplicationRecord
     end
   end
 
+  def delete_reviews
+    reviews.each do |review|
+      review.destroy
+    end
+  end
+
 end
