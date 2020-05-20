@@ -88,6 +88,7 @@ RSpec.describe "deleting shelter show page", type: :feature do
     within('#shelter') do
       expect(page).to have_content("2")
       expect(page).to have_content("4.5")
+      expect(page).to have_content("Open Applications: 2")
     end
   end
 end

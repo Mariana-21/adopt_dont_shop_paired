@@ -14,8 +14,8 @@
 <li>State: <%= @shelter.state %></li>
 <li>Zip Code: <%= @shelter.zip %></li>
 <li>Pets: <%= @shelter.total_pets %></li>
-<li>Average Rating: <%= @shelter.average_reviews %></li>
-
+<li>Average Rating: <%= @shelter.average_reviews.round(2) %></li>
+<li>Open Applications: <%= @shelter.total_apps %></li>
 </ul>
 
 <article >
